@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: white;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.kitten {
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.buttons button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.no {
+    background-color: #999;
+    color: white;
+    position: relative;
+}
+
+.message {
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
